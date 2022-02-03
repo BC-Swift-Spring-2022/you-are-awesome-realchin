@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         repeat {
             newMessageNumber = Int.random(in: 0...messages.count-1)
         } while messageNumber == newMessageNumber
+        
         messageNumber = newMessageNumber
         messageLabel.text = messages[messageNumber]
         
